@@ -12,10 +12,13 @@ import java.util.Formatter;
 import java.util.List;
 
 /*
- * Version: v0.53.0
+ * Version: v0.53.1
  * SPDX-License-Identifier: MIT
  *
  * Changelog
+ *
+ * - 0.53.1 (2026-10-27)
+ *      - Changed the application display name to RTerminal.
  *
  * - 0.1.0 (2021-03-08)
  *      - Initial Release.
@@ -347,7 +350,7 @@ public final class TermuxConstants {
      */
 
     /** Termux app name */
-    public static final String TERMUX_APP_NAME = "Termux"; // Default: "Termux"
+    public static final String TERMUX_APP_NAME = "RTerminal"; // Fork display name
     /** Termux package name */
     public static final String TERMUX_PACKAGE_NAME = "com.termux"; // Default: "com.termux"
     /** Termux GitHub repo name */

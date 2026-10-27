@@ -11,6 +11,8 @@
 
 Note that this repository is for the app itself (the user interface and the terminal emulation). For the packages installable inside the app, see [termux/termux-packages](https://github.com/termux/termux-packages).
 
+> **RTerminal development fork.** The current branch only changes the app's displayed name. It is not a release build: the Android package ID is still `com.termux`, the upstream bootstrap and package repositories are unchanged, and RTerminal cannot yet be installed alongside Termux. The independent package identity, bootstrap, `pkg` repository, Python runtime, GUI stack, stability work, and measured storage optimization are tracked in [ROADMAP.md](ROADMAP.md). No RAM or disk reduction claim is verified yet.
+
 Quick how-to about Termux package management is available at [Package Management](https://github.com/termux/termux-packages/wiki/Package-Management). It also has info on how to fix **`repository is under maintenance or down`** errors when running `apt` or `pkg` commands.
 
 **We are looking for Termux Android application maintainers.**
