@@ -1,17 +1,11 @@
-# Termux application
-
-[![Build status](https://github.com/termux/termux-app/workflows/Build/badge.svg)](https://github.com/termux/termux-app/actions)
-[![Testing status](https://github.com/termux/termux-app/workflows/Unit%20tests/badge.svg)](https://github.com/termux/termux-app/actions)
-[![Join the chat at https://gitter.im/termux/termux](https://badges.gitter.im/termux/termux.svg)](https://gitter.im/termux/termux)
-[![Join the Termux discord server](https://img.shields.io/discord/641256914684084234.svg?label=&logo=discord&logoColor=ffffff&color=5865F2)](https://discord.gg/HXpF69X)
-[![Termux library releases at Jitpack](https://jitpack.io/v/termux/termux-app.svg)](https://jitpack.io/#termux/termux-app)
+# RTerminal — Android terminal fork
 
 
 [Termux](https://termux.dev) is an Android terminal application and Linux environment.
 
 Note that this repository is for the app itself (the user interface and the terminal emulation). For the packages installable inside the app, see [termux/termux-packages](https://github.com/termux/termux-packages).
 
-> **RTerminal development fork.** The current branch only changes the app's displayed name. It is not a release build: the Android package ID is still `com.termux`, the upstream bootstrap and package repositories are unchanged, and RTerminal cannot yet be installed alongside Termux. The independent package identity, bootstrap, `pkg` repository, Python runtime, GUI stack, stability work, and measured storage optimization are tracked in [ROADMAP.md](ROADMAP.md). No RAM or disk reduction claim is verified yet.
+> **RTerminal development fork.** The Android application ID is now `com.reloot.rterminal`, the Java namespace remains `com.termux`, and the launcher icon has been replaced. Release builds are configured to emit architecture-specific APKs as well as a universal APK. The custom bootstrap and `pkg` repository are not ready: Gradle now refuses to package the upstream bootstrap because it is hardcoded for Termux's `/data/data/com.termux/files/usr` prefix. Do not install or distribute an APK until a bootstrap built for RTerminal passes device tests. Python/GUI support, stability work, and storage savings beyond ABI packaging remain unimplemented and unmeasured; see [ROADMAP.md](ROADMAP.md).
 
 Quick how-to about Termux package management is available at [Package Management](https://github.com/termux/termux-packages/wiki/Package-Management). It also has info on how to fix **`repository is under maintenance or down`** errors when running `apt` or `pkg` commands.
 
